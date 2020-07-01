@@ -1,0 +1,96 @@
+<head>
+  <h1 id="title">Survey Form</h1>
+</head>
+
+<body>
+  <header>
+    <p id="description">A short survey on single-use plastics:
+    </p>
+  </header>
+  <main>
+    <form id="survey-form" method="GET" action="index.php">
+     <section class="rows">
+       <section class="labels">
+         <label id="name-label" for="name">* Name: </label>
+       </section>
+       <section class="responses">
+         <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
+       </section>
+      </section>
+      <section class="rows">
+        <section class="labels">
+          <label id="email-label" for="email">* Email:</label>
+        </section>
+        <section class="responses">
+          <input type="email" name="email" id="email" class="input-field" placeholder="Enter your email" required>
+        </section>
+      </section>
+      <section class="rows">
+        <section class="labels">
+          <label id="number-label" for="age">* Age: </label>
+        </section>
+        <section class="responses">
+          <input type="number" name="age" id="number" class="input-field" placeholder="How old are you?" min="1" max="125" required>
+        </section>
+      </section>
+      <section class="rows">
+        <section class="labels">
+          <label id="gender-label" for="gender">* Gender: </label>
+        </section>
+        <section class="responses">
+          <select id="dropdown" name="gender" class="dropdown">
+            <option disabled value="Select">Select</option>
+            <option value="female">Female</option>
+            <option value="male">Male</option>
+            <option value="rather-not-say">Rather not say</option>
+            <option value="neutral">Neutral</option>
+          </select>
+        </section>
+      </section>
+      <section class="rows">
+        <section class="labels">
+          <label for="plasticUsage">* Do you use any of the following plastics?</label>
+        </section>
+        <section class="responses">
+          <ul style="list-style: none;">
+            <li class="radio">
+              <label>Straw<input name="radio-buttons" value="1" type="radio" class="plasticUsage"></label> </li>
+            <li class="radio">
+              <label>Hot beverage lid<input name="radio-buttons" value="2" type="radio" class="plasticUsage"></label></li>
+            <li class="radio">
+              <label>Plastic shopping bag<input name="radio-buttons" value="3" type="radio" class="plasticUsage"></label></li>
+          </ul>
+        </section>
+      </section>
+      <section class="rows">
+        <section class="labels">
+          <label for="altMaterials">Are you currently using any of these alternative materials?<br>(Check all that apply):</label>
+        </section>
+        <section class="responses">
+          <ul id="altMaterials" style="list-style: none;">
+            <li class="checkbox"<label><input name="bamboo" value="1" type="checkbox" class="altMaterials">Bamboo</label></li>
+        <li class="checkbox"<label><input name="glass" value="2" type="checkbox" class="altMaterials">Glass</label></li>
+    <li class="checkbox"<label><input name="keep-cups" value="3" type="checkbox" class="altMaterials">Keep cups</label></li>
+
+<li class="checkbox"<label><input name="paper-bags" value="4" type="checkbox" class="altMaterials">Paper bags</label></li>
+
+<li class="checkbox"<label><input name="tupperware-containers" value="5" type="checkbox" class="altMaterials">Tupperware containers</label></li>
+
+          </ul>
+        </section>
+      </section>
+<section class="rows">
+  <section class="labels">
+    <label for="comments">Any comments or suggestions on minimising plastic usage?</label>
+  </section>
+  <section class="responses">
+    <textarea id="comments" class="input-field" style="height:50px; resize: vertical;" name="comment" placeholder="Enter your comments here..."></textarea>
+  </section>
+</section>
+<button id="submit" type="submit">Submit</button>
+    </form>
+
+
+
+  </main>
+</body>

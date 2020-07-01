@@ -1,0 +1,94 @@
+@import url(https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet);
+
+html,
+body{
+  font-family:'Quicksand', helvetica;
+  text-align: center;
+  background-color: #FF7F50
+}
+
+header{
+  font-weight: bold;
+
+}
+
+form{
+  background-color: white;
+  width: 75%;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+.labels{
+  display: inline-block;
+  text-align: right;
+  margin-top: 15px;
+  padding: 5px;
+  width: 40%;
+}
+
+.responses{
+  display: inline-block;
+  text-align: left;
+  width: 50%;
+  padding: 5px;
+  vertical-align: middle;
+}
+
+.input-field{
+  width: 300px;
+  height: 20px;
+  border: 1px solid #FF6347;
+  padding: 5px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+#dropdown{
+  margin: 10px;
+  height: 20px;
+  width: 200px;
+  border: 1px solid #FF6347;
+}
+
+#plasticUsage,
+input[type="radio"] {
+  float: left;
+  margin-right: 5px;
+}
+
+.radio{
+  position: relative;
+  left: -43px;
+  margin-left: 10px;
+  display: block;
+  padding-bottom: 10px;
+}
+
+#altMterials,
+input[type="checkbox"]{
+  margin-right: 7px;
+  margin: 5px;
+}
+
+.checkbox{
+  position: relative;
+  left: -43px;
+  margin-left: 10px;
+  display: block;
+  padding-bottom: 10px;
+}
+
+#comments{
+  position: relative;
+  margin: 10px;
+  padding-bottom: 10px;
+}
+
+#submit{
+  padding: 10px;
+  margin-top: 10px;
+  width: 100px;
+  margin-bottom: 10px;
+  background-color: #FF4500;
+}
